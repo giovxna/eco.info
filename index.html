@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eco.info</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <div class="app-container">
+        <header>
+            <div class="logo"> 𖠰 eco.info</div>
+            <nav class="nav-pills">
+                <a href="#mission">Missão</a>
+                <a href="#campaigns">Campanhas</a>
+                <a href="#knowledge">Conhecimento</a>
+            </nav>
+        </header>
+
+        <section class="hero-wrapper">
+            <aside class="hero-sidebar">
+                <div class="sidebar-card">
+                    <img src="https://images.unsplash.com/photo-1463936575829-25148e1db1b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+                        class="thumb" alt="Natureza">
+                    <p>Milhares de pessoas ainda desconhecem ações simples que reduzem o impacto ambiental. Aqui você
+                        aprende e transforma conhecimento em atitude.</p>
+                </div>
+                <div class="sidebar-card" style="border: 1px solid #eee; background: white;">
+                    <h4 style="margin-bottom: 10px;">Compartilhe Resultados</h4>
+                    <p style="margin-bottom: 0;">Quanto mais pessoas informadas, maior o impacto positivo.</p>
+                </div>
+            </aside>
+            <div class="hero-main">
+                <h1> Junte-se a quem está <span class="highlight-border">mudando</span> o planeta!</h1>
+                <div class="hero-image-box">
+                    <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                        alt="Eco Landscape">
+                    <div class="floating-stat">
+                        <span class="stat-num">+<span id="count">0</span></span>
+                        <span style="font-weight:600; font-size: 0.9rem;">ações impactantes</span>
+                        <p class="stat-desc">Cada atitude conta: reciclagem correta, economia de água.</p>
+                    </div>
+                </div>
+                <div class="hero-footer">
+                    <div>
+                        <p>Nosso compromisso é preservar o meio ambiente por meio de ações que promovem reflorestamento
+                            e proteção da biodiversidade.</p>
+                    </div>
+                    <div class="spin-badge">
+                        <svg viewBox="0 0 100 100">
+                            <path id="circlePath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"
+                                fill="none" />
+                            <text font-size="11" letter-spacing="1">
+                                <textPath xlink:href="#circlePath">• ECO FRIENDLY • SAVE THE WORLD</textPath>
+                            </text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="content-sections">
+
+            <section id="mission" class="mission-section">
+                <div class="mission-text">
+                    <h2>Nossa Missão</h2>
+                    <p>Nosso propósito é tornar informação ambiental acessível, prática e confiável. Ajudamos pessoas a
+                        entender como as suas escolhas afetam o planeta e como pequenas mudanças podem gerar resultados
+                        reais.</p>
+                </div>
+                <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    class="mission-img" alt="Office Plants">
+            </section>
+
+            <section class="stats-bar">
+                <div>
+                    <h3>30%</h3>
+                    <p>dos brasileiros <br> descartam incorretamente</p>
+                </div>
+                <div>
+                    <h3>7 milhões</h3>
+                    <p>de toneladas de plástico <br> chegam aos oceanos por ano</p>
+                </div>
+                <div>
+                    <h3>91%</h3>
+                    <p>dos riscos ambientais diminuem <br> com educação básica</p>
+                </div>
+            </section>
+
+            <section class="features-section">
+                <h2>Nossos pilares</h2>
+                <div class="features-grid">
+                    <div class="features-left">
+                        <div class="feat-card">
+                            <h4>Informação Confiável</h4>
+                            <p>Conteúdos verificados e baseados em dados reais, para que você entenda o impacto de cada
+                                ação ambiental.</p>
+                        </div>
+                        <div class="feat-card">
+                            <h4>Aprendizado Rápido</h4>
+                            <p>Informações claras e práticas, para você aplicar no dia a dia sem complicação.</p>
+                        </div>
+                        <div class="feat-card">
+                            <h4>Conteúdo Completo</h4>
+                            <p>Reciclagem, poluição, água, energia, biodiversidade, consumo… Tudo reunido em um só
+                                lugar.</p>
+                        </div>
+                    </div>
+                    <div class="feat-card-large">
+                        <div>
+                            <h4 style="color: var(--dark-green);">Ação em Todo Lugar</h4>
+                            <p>Estamos aqui para informar pessoas de qualquer parte do país e estimular mudanças locais
+                                com impacto global.</p>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            alt="Cuidando da Natureza">
+                    </div>
+                </div>
+            </section>
+
+            <section id="campaigns" class="campaigns-section">
+                <span class="camp-label">Aprenda na prática</span>
+                <div class="camp-header">
+                    <h2>Atividades e Campanhas de Conscientização</h2>
+                </div>
+
+                <div class="camp-grid">
+                    <div class="c-card c-large" onclick="abrirModalCampanha(0)">
+                        <div class="c-large-text">
+                            <h3>Limpeza dos Rios</h3>
+                            <p>Aprenda como a poluição afeta os lençóis freáticos e como preservar nossos ecossistemas
+                                hídricos.</p>
+                            <div class="btn-link">Ler conteúdo</div>
+                        </div>
+                    </div>
+
+                    <div class="c-card c-small" onclick="abrirModalCampanha(1)">
+                        <div>
+                            <h3>Jardins Florestais</h3>
+                            <p>Como criar micro-ecossistemas que atraem polinizadores e reforçam a biodiversidade.</p>
+                        </div>
+                        <div class="btn-link">Ler conteúdo</div>
+                    </div>
+
+                    <div class="c-card c-small" onclick="abrirModalCampanha(2)">
+                        <div>
+                            <h3>Guia de Reciclagem</h3>
+                            <p>Entenda o que pode ser reciclado e como evitar contaminação dos recicláveis.</p>
+                        </div>
+                        <div class="btn-link">Ler conteúdo</div>
+                    </div>
+
+                    <div class="c-card c-small" onclick="abrirModalCampanha(3)">
+                        <div>
+                            <h3>Eficiência Energética</h3>
+                            <p>Aprenda hábitos práticos para evitar desperdícios e reduzir a conta de luz.</p>
+                        </div>
+                        <div class="btn-link">Ler conteúdo</div>
+                    </div>
+
+                    <div class="c-card c-small" onclick="abrirModalCampanha(4)">
+                        <div>
+                            <h3>Compostagem</h3>
+                            <p>Transforme lixo orgânico em adubo e reduza o impacto nos aterros sanitários.</p>
+                        </div>
+                        <div class="btn-link">Ler conteúdo</div>
+                    </div>
+
+                    <div class="c-card c-small" onclick="abrirModalCampanha(5)">
+                        <div>
+                            <h3>Lixo Eletrônico</h3>
+                            <p>Pilhas e celulares velhos não vão no lixo comum. Saiba como descartar corretamente.</p>
+                        </div>
+                        <div class="btn-link">Ler conteúdo</div>
+                    </div>
+
+                    <div class="c-card c-small" onclick="abrirModalCampanha(6)">
+                        <div>
+                            <h3>Moda Sustentável</h3>
+                            <p>Entenda o impacto da indústria têxtil e como consumir roupas de forma consciente.</p>
+                        </div>
+                        <div class="btn-link">Ler conteúdo</div>
+                    </div>
+
+                    <div class="c-card c-small" onclick="abrirModalCampanha(7)">
+                        <div>
+                            <h3>Água da Chuva</h3>
+                            <p>Técnicas simples para captar e reutilizar água para limpeza e jardinagem.</p>
+                        </div>
+                        <div class="btn-link">Ler conteúdo</div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="knowledge" class="knowledge-section">
+                <div class="knowledge-header">
+                    <h2>Base de Conhecimento</h2>
+
+                    <div class="search-wrapper">
+                        <div class="search-box">
+                            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+
+                            <input type="text" id="input-busca" placeholder="O que você quer buscar hoje?">
+
+                            <button id="btn-limpar" class="clear-btn" onclick="limparBusca()"
+                                title="Limpar pesquisa">&times;</button>
+
+                            <button id="botao-busca" onclick="iniciarBusca()">Buscar</button>
+                        </div>
+
+                        <div class="quick-filters">
+                            <span>Sugestões:</span>
+                            <button class="chip" onclick="filtrarPorTag('Reciclagem')">Reciclagem</button>
+                            <button class="chip" onclick="filtrarPorTag('Água')">Água</button>
+                            <button class="chip" onclick="filtrarPorTag('Energia')">Energia</button>
+                            <button class="chip" onclick="filtrarPorTag('Floresta')">Floresta</button>
+                            <button class="chip" onclick="filtrarPorTag('Causa')">Causa</button>
+
+                            <button class="chip" onclick="verTodos()">Todos</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-container"></div>
+            </section>
+
+        </div>
+
+        <script src="app.js"></script>
+    </div>
+</body>
