@@ -209,3 +209,75 @@ header {
     border-radius: var(--radius-lg);
     object-fit: cover;
 }
+
+.stats-bar {
+    background: var(--bg-light);
+    padding: 50px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.stats-bar h3 {
+    font-size: 3rem;
+    color: var(--dark-green);
+    margin-bottom: 5px;
+}
+
+.stats-bar p {
+    color: var(--text-gray);
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.features-section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    max-width: 500px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.features-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.feat-card {
+    background: var(--bg-light);
+    padding: 30px;
+    border-radius: var(--radius-md);
+}
+
+.feat-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: var(--dark-green);
+}
+
+.feat-card p {
+    font-size: 0.9rem;
+    color: var(--text-gray);
+}
+
+.feat-card-large {
+    background: #EDF3EB;
+    border-radius: var(--radius-md);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.feat-card-large img {
+    width: 100%;
+    border-radius: var(--radius-md);
+}
