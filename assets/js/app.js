@@ -6,7 +6,7 @@ let dados = [];
 async function iniciarBusca() {
     if (dados.length === 0) {
         try {
-            let resposta = await fetch("dados.json");
+            let resposta = await fetch("./assets/js/dados.json");
             if (!resposta.ok) throw new Error("Erro HTTP");
             dados = await resposta.json();
         } catch (error) {
@@ -98,7 +98,7 @@ async function verTodos() {
 
     if (dados.length === 0) {
         try {
-            let resposta = await fetch("dados.json");
+            let resposta = await fetch("./assets/js/dados.json");
             dados = await resposta.json();
         } catch (error) {
             console.error("Erro ao carregar dados:", error);
