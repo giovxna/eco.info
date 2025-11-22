@@ -281,3 +281,123 @@ header {
     width: 100%;
     border-radius: var(--radius-md);
 }
+
+.campaigns-section {
+    border-top: 1px solid #eee;
+    padding-top: 40px;
+}
+
+.camp-label {
+    background: #F0F0F0;
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    color: #555;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.camp-header h2 {
+    font-size: 2.2rem;
+    color: var(--dark-green);
+    margin-bottom: 40px;
+}
+
+.camp-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr;
+    gap: 25px;
+    min-height: 380px;
+    grid-auto-flow: dense;
+}
+
+.c-card {
+    border-radius: var(--radius-md);
+    padding: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
+.c-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+}
+
+.c-large {
+    background: white;
+    border: 1px solid #eee;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.c-large-text {
+    flex: 1;
+    z-index: 2;
+}
+
+.c-large h3 {
+    font-size: 1.8rem;
+    color: var(--dark-green);
+    margin-bottom: 15px;
+}
+
+.c-large p {
+    font-size: 0.9rem;
+    color: var(--text-gray);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.c-small {
+    background: #EBF5E8;
+    border: none;
+}
+
+.c-small h3 {
+    font-size: 1.4rem;
+    color: var(--dark-green);
+    margin-bottom: 10px;
+}
+
+.c-small p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.c-small::after {
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    right: -30px;
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+}
+
+.btn-link {
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 25px;
+    z-index: 2;
+    text-decoration: none;
+    color: var(--text-main);
+}
+
+.btn-link:hover {
+    color: var(--dark-green);
+    cursor: pointer;
+    text-decoration: underline;
+    transition: color 0.5s ease;
+}
