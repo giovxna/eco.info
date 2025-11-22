@@ -71,3 +71,47 @@ function renderizarCards(listaDados, termoDestaque = "") {
         cardContainer.appendChild(article);
     }
 }
+
+function filtrarPorTag(tag) {
+    campoBusca.value = tag;
+    iniciarBusca();
+}
+
+function limparBusca() {
+    campoBusca.value = "";
+    btnLimpar.style.display = "none";
+    cardContainer.innerHTML = "";
+    campoBusca.focus();
+}
+
+function toggleBtnLimpar(valor) {
+    btnLimpar.style.display = valor.length > 0 ? "block" : "none";
+}
+
+campoBusca.addEventListener('input', () => {
+    toggleBtnLimpar(campoBusca.value);
+});
+
+async function verTodos() {
+    campoBusca.value = "";
+    btnLimpar.style.display = "none";
+
+    if (dados.length === 0) {
+        try {
+            let resposta = await fetch("dados.json");
+            dados = await resposta.json();
+        } catch (error) {
+            console.error("Erro ao carregar dados:", error);
+            return;
+        }
+    }
+
+    renderizarCards(dados);
+}
+
+campoBusca.addEventListener("keypress", function (event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        iniciarBusca();
+    }
+});
