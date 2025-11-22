@@ -235,8 +235,25 @@
                 <div class="card-container"></div>
             </section>
 
+
         </div>
 
-        <script src="app.js"></script>
     </div>
+
+    <div class="modal-overlay" id="infoModal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="fecharModal()">&times;</span>
+            <h2 id="modalTitle">Título</h2>
+            <p id="modalDate" style="color:#999; font-size:0.9rem; margin-bottom:20px;">Categoria</p>
+            <div id="modalDesc">Descrição...</div>
+            <div id="modalTags" style="margin-top:20px;"></div>
+            <a href="#" id="modalLink" target="_blank" class="btn btn-link"
+                style="margin-top:30px; display:inline-block;">Ler Artigo ↗</a>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+
 </body>
+
+</html>
