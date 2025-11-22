@@ -1,0 +1,39 @@
+:root {
+    --bg-body: #D8E6D3;
+    --bg-card: #FFFFFF;
+    --bg-light: #FAFAFA;
+    --accent-green: #CDE4C0;
+    --dark-green: #3D5535;
+    --text-main: #1A1A1A;
+    --text-gray: #666666;
+    --radius-lg: 40px;
+    --radius-md: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-body);
+    color: var(--text-main);
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.app-container {
+    background-color: var(--bg-card);
+    width: 100%;
+    max-width: 1280px;
+    border-radius: var(--radius-lg);
+    padding: 40px 50px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    position: relative;
+}
