@@ -37,3 +37,38 @@ body {
     gap: 50px;
     position: relative;
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-pills {
+    background: #F3F4F6;
+    padding: 8px 25px;
+    border-radius: 30px;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-pills a {
+    text-decoration: none;
+    color: var(--text-main);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.nav-pills a:hover {
+    color: var(--dark-green);
+    transition: color 0.3s ease;
+}
