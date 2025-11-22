@@ -34,3 +34,40 @@ async function iniciarBusca() {
 
     renderizarCards(dadosFiltrados, termoBusca);
 }
+
+function renderizarCards(listaDados, termoDestaque = "") {
+    cardContainer.innerHTML = "";
+
+    if (listaDados.length === 0) {
+        cardContainer.innerHTML = `
+            <div class="no-results">
+                <h3>Nenhum resultado para "${campoBusca.value}"</h3>
+                <p>Tente palavras mais genéricas como "água" ou "reciclagem".</p>
+            </div>
+        `;
+        return;
+    }
+
+    for (let dado of listaDados) {
+        let article = document.createElement("article");
+        article.classList.add("card");
+
+        const destacar = (texto) => {
+            if (!termoDestaque) return texto;
+            const regex = new RegExp(`(${termoDestaque})`, 'gi');
+            return texto.replace(regex, '<span class="highlight-text">$1</span>');
+        };
+
+        article.innerHTML = `
+            <div class="card-content">
+                <span class="card-date">${dado.data_criacao}</span>
+                <h2>${destacar(dado.nome)}</h2>
+                <p>${destacar(dado.descricao)}</p>
+                <div class="btn-link" style="margin-top:10px; cursor:pointer; color:#2c5c38; font-weight:600; hover:#3D5535;">Saiba mais ↗</div>
+            </div>
+        `;
+
+        article.addEventListener('click', () => abrirModal(dado));
+        cardContainer.appendChild(article);
+    }
+}
