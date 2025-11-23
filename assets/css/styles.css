@@ -233,9 +233,9 @@ header {
 }
 
 .features-section h2 {
-    font-size: 2rem;
-    margin-bottom: 40px;
-    max-width: 500px;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: var(--dark-green);
 }
 
 .features-grid {
@@ -505,6 +505,7 @@ header {
     cursor: pointer;
     transition: background 0.3s;
     z-index: 10;
+    font-family: Poppins, sans-serif;
 }
 
 .search-box #botao-busca:hover {
